@@ -7,8 +7,20 @@
         <style type="text/css">
             @import "./css/stylesheet.css"; 
             @import "./css/onepage-scroll.css";
+            @import "./css/som.css";
+            @import "./css/social.css";
         </style>
+        <link href="fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
         <script>
 
             $(document).ready(function () {
@@ -18,10 +30,26 @@
                     responsiveFallback: false
                 });
             });
+            /*
+             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+             */
+            $('.fancybox-media')
+                    .attr('rel', 'media-gallery')
+                    .fancybox({
+                        openEffect: 'none',
+                        closeEffect: 'none',
+                        prevEffect: 'none',
+                        nextEffect: 'none',
+                        arrows: false,
+                        helpers: {
+                            media: {},
+                            buttons: {}
+                        }
+                    });
+
 
 
         </script>
-
         <link rel="icon" type="image/png" href="Images/mini.png">
     </head>
     <body>
@@ -36,16 +64,6 @@
                             <p>"Pense no seu projeto como um filho. Você não quer vê-lo mal criado."</p>
                             <p>-Autor Desconhecido</p>
                         </div>
-                        <div class="social">
-                            <div class="contato">
-                                <a href="https://plus.google.com/103757835234364126900">
-                                    <img src="Images/g.png" alt="google+"> </a>
-                                <a href="https://www.facebook.com/LievertonHorn" target="blank">
-                                    <img src="Images/fb.png" alt="facebook"> </a>
-                            </div>
-                        </div>
-
-
                     </div>
                 </header>
 
@@ -75,6 +93,26 @@
                         </div>
                     </div>
                 </section>
+                <section class="page6">
+                    <div class = "musicas">
+                        <a class="fancybox-media" href="https://www.youtube.com/watch?v=5W_wd9Qf0IE" rel="media-gallery"><img src="Images/play.png"></a> 
+                    </div>
+                    <div class="titulo" id="tittle3">
+                        <h2 class="h1">
+                            <a id="hobbies">Meus Hobbies</a>
+                        </h2>
+                    </div>
+                    <div class="conteudo" id="content3">
+                        <p class="p1" id="p2">
+                            > Ao longo dos anos já tive vários hobbies, como jogar videogame,
+                            ouvir musica, ler e ver filmes, atualmente passo minhas horas vagas
+                            estudando, ouvindo musica e treinando Kung Fu. Eu Treino kung fu academia
+                            <strong>Dragão Negro</strong>, na Aer Sadia,
+                            Cidade de toledo,todas as terças, quintas e sabados e gosto de observar
+                            as estrelas nas horas vagas.
+                        </p>
+                    </div>
+                </section>
                 <section>
                     <div class="titulo" id="tittle2">
                         <h2>
@@ -91,21 +129,7 @@
                     </div>
                 </section>
                 <section>
-                    <div class="titulo" id="tittle3">
-                        <h2>
-                            <a id="hobbies">Meus Hobbies</a>
-                        </h2>
-                    </div>
-                    <div class="conteudo" id="content3">
-                        <p>
-                            Ao longo dos anos já tive vários hobbies, como jogar videogame,
-                            ouvir musica, ler e ver filmes, atualmente passo minhas horas vagas
-                            estudando, ouvindo musica e treinando kung fu.Treino kung fu academia
-                            <strong>Dragão Negro</strong>,em uma associação no bairro Porto Alegre,
-                            Cidade de toledo,todas as terças, quintas e sabados e gosto de observar
-                            as estrelas nas horas vagas.
-                        </p>
-                    </div>
+
                 </section>
                 <section>
                     <div class="titulo" id="tittle4">
@@ -160,6 +184,9 @@
                             </li>
                         </ul>
                 </section>
+
+                <!-- img by unsplash.com -->
+
             </div>
 
             <!--</div>-->          
@@ -168,8 +195,63 @@
         <footer class="footer">
             <span class="footer2"> Site desenvolvido por <strong>Lieverton Horn Queiroz</strong></span>
         </footer>
-    </div>
+                           <div class="share-buttons">
+                            <div class="share-button">
+                                <div class="share-button-secondary">
+                                    <div class="share-button-secondary-content">
+                                        share on twitter
+                                    </div>
+                                </div>
+                                <div class="share-button-primary">
+                                    <i class="share-button-icon fa fa-twitter"></i>
+                                </div>
+                            </div>
 
+                            <div class="share-button">
+                                <div class="share-button-secondary">
+                                    <div class="share-button-secondary-content">
+                                        share on facebook
+                                    </div>
+                                </div>
+                                <div class="share-button-primary">
+                                    <i class="share-button-icon fa fa-facebook"></i>
+                                </div>
+                            </div>
+
+                            <div class="share-button">
+                                <div class="share-button-secondary">
+                                    <div class="share-button-secondary-content">
+                                        pin on pinterest
+                                    </div>
+                                </div>
+                                <div class="share-button-primary">
+                                    <i class="share-button-icon fa fa-pinterest"></i>
+                                </div>
+                            </div>
+
+                            <div class="share-button">
+                                <div class="share-button-secondary">
+                                    <div class="share-button-secondary-content">
+                                        share on tumblr
+                                    </div>
+                                </div>
+                                <div class="share-button-primary">
+                                    <i class="share-button-icon fa fa-tumblr"></i>
+                                </div>
+                            </div>
+
+                            <div class="share-button">
+                                <div class="share-button-secondary">
+                                    <div class="share-button-secondary-content">
+                                        share on google+
+                                    </div>
+                                </div>
+                                <div class="share-button-primary">
+                                    <i class="share-button-icon fa fa-google-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
     <script src="javascript/jquery.onepage-scroll.js" type="text/javascript"></script>
 </body>
 </html>

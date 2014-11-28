@@ -53,6 +53,8 @@ body{
 .h1{
     position: relative;
     width:100%;
+    color: white;   
+    top: 60px;
     height:3%;
     margin: auto;
     text-align: center;
@@ -73,4 +75,7 @@ body{
     margin: auto;
     text-align: justify;
 
+}
+#p2{
+    width: 40%;
 }

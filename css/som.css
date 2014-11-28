@@ -1,0 +1,14 @@
+.musicas{
+    position: absolute;
+    bottom: 10%;
+    left: 52%;
+}
+.page6{
+    background: url("../Images/som.jpg") no-repeat;
+    background-size: cover;
+}
+.page6 img{
+    width: 30px;
+    height: 30px;
+}
+//
