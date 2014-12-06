@@ -23,7 +23,7 @@
  
 #feed:hover{
     
-    background: rgba(150, 244, 10, 1.0);
+    background: rgba(255, 255, 10, 0.5);;
     position: relative;
     top: 0;
 }
