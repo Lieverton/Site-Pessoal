@@ -1,14 +1,15 @@
 .musicas{
     position: absolute;
     bottom: 10%;
-    left: 52%;
+    left: 49%;
 }
-.page6{
+.page3{
     background: url("../Images/som.jpg") no-repeat;
     background-size: cover;
 }
-.page6 img{
+.page3 img{
     width: 30px;
     height: 30px;
+    
 }
 

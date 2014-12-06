@@ -44,6 +44,7 @@ body{
 }
 #content1{
     background: url(../Images/img2.jpg);
+    background-size: cover;
     position: relative;
     top: 0;
     width: 100%;

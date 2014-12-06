@@ -7,74 +7,6 @@
         <style type="text/css">
             @import "css/main.css";
         </style>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <!-- Validator -->
-
-
-
-        <script src="javascript/languages/jquery.validationEngine-pt_BR.js" type="text/javascript"></script>
-        <script src="javascript/jquery.validationEngine.js" type="text/javascript"></script>
-
-        <link href="fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-
-        <!-- Add fancyBox -->
-        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
-        <script>
-
-            $(document).ready(function () {
-                $(".main").onepage_scroll({
-                    sectionContainer: "section",
-                    loop: true,
-                    responsiveFallback: false
-                });
-            });
-            /*
-             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
-             */
-            $('.fancybox').fancybox();
-
-            /*
-             *  Different effects
-             */
-
-            // Change title type, overlay closing speed
-            $(".fancybox-effects-a").fancybox({
-                helpers: {
-                    title: {
-                        type: 'outside'
-                    },
-                    overlay: {
-                        speedOut: 0
-                    }
-                }
-            });
-            $('.fancybox-media')
-                    .attr('rel', 'media-gallery')
-                    .fancybox({
-                        openEffect: 'none',
-                        closeEffect: 'none',
-                        prevEffect: 'none',
-                        nextEffect: 'none',
-                        arrows: false,
-                        helpers: {
-                            media: {},
-                            buttons: {}
-                        }
-                    });
-            $(document).ready(function () {
-                $("#form1").validationEngine('attach');
-            });
-
-
-        </script>
-        <link rel="icon" type="image/png" href="Images/mini.png">
     </head>
     <body>
         <div class="main">
@@ -95,7 +27,7 @@
             </section>    
             <div class="all-content">
                 <!--            <div class="wrapper">-->
-                <section class="page3">
+                <section class="page2">
 
                     <div class="conteudo" id="content1">
                         <h2 class="h1">
@@ -117,7 +49,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="page6">
+                <section class="page3">
                     <div class = "musicas">
                         <a class="fancybox-media" href="https://www.youtube.com/watch?v=5W_wd9Qf0IE" rel="media-gallery"><img src="Images/play.png" alt="play video"></a> 
                     </div>
@@ -137,9 +69,9 @@
                         </p>
                     </div>
                 </section>
-                <section id = "page4">
+                <section class="page4">
                     <div class="titulo" id="tittle2">
-                        <h2>
+                        <h2 class="h3">
                             <a id="Interesse">Areas de Interesse</a>
                         </h2>
                     </div>
@@ -152,24 +84,14 @@
 
                     </div>
                 </section>
-                <section id="page5">
-                    <h1>Curiosidades</h1>
-                    <div><a id = "kung" href="Kung fu">Kung Fu</a>
-                    </div>
-                    <div class="contents">
-                        <h2>Kung Fu</h2>
-                        <p>Comecei a treinar kung fu aos 15 anos. Sou faixa amarela. Meu pai é meu professor, ele começou a treinar artes marciais aos 12 anos de idade e nunca mais parou.</p>
-                    </div>
-                </section>
-                <section id = "page6">
+                <section class="page5">
+                    <h2>Contato</h2>
                     <div id="form-main">
                         <div id="form-div">
                             <form class="form" id="form1">
-
                                 <p class="name">
                                     <input name="usrname"  type="text" class="validate[required,custom[onlyLetter],minSize[3],maxSize[60]]] feedback-input" placeholder="Nome" id="name" />
                                 </p>
-
                                 <p class="email">
                                     <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
                                 </p>
@@ -179,14 +101,13 @@
                                 <p class="text">
                                     <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="O que gostaria de falar?"></textarea>
                                 </p>
-
-
                                 <div class="submit">
                                     <input type="submit" value="SEND" id="button-blue"/>
                                     <div class="ease"></div>
                                 </div>
                             </form>
                         </div>
+                    </div>
                 </section>
 
 
@@ -233,7 +154,80 @@
                 </div>
             </div>
         </div>
+        
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <!-- validator -->
+        <script src="javascript/languages/jquery.validationEngine-pt_BR.js" type="text/javascript"></script>
+        <script src="javascript/jquery.validationEngine.js" type="text/javascript"></script>
+        <!-- Add fancyBox -->
+
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
         <script src="javascript/jquery.onepage-scroll.js" type="text/javascript"></script>
+        <!-- Slider -->
+        <script src="javascript/jquery.easing.1.3.js"></script>
+        <script src="javascript/jquery.animate-enhanced.min.js"></script>
+        <script src="javascript/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
+
+        <script>
+
+            $(document).ready(function () {
+                $(".main").onepage_scroll({
+                    sectionContainer: "section",
+                    loop: true,
+                    responsiveFallback: false
+                });
+            });
+            /*
+             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+             */
+            $('.fancybox').fancybox();
+
+            /*
+             *  Different effects
+             */
+
+            // Change title type, overlay closing speed
+            $(".fancybox-effects-a").fancybox({
+                helpers: {
+                    title: {
+                        type: 'outside'
+                    },
+                    overlay: {
+                        speedOut: 0
+                    }
+                }
+            });
+            $('.fancybox-media')
+                    .attr('rel', 'media-gallery')
+                    .fancybox({
+                        openEffect: 'none',
+                        closeEffect: 'none',
+                        prevEffect: 'none',
+                        nextEffect: 'none',
+                        arrows: false,
+                        helpers: {
+                            media: {},
+                            buttons: {}
+                        }
+                    });
+            $(document).ready(function () {
+                $("#form1").validationEngine('attach');
+            });
+            $(function () {
+                $('#slides').superslides({
+                    hashchange: true
+                });
+            });
+
+        </script>
+
+
+
+
+
     </body>
 </html>
