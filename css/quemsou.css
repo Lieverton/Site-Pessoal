@@ -80,4 +80,14 @@ body{
 #p2{
     width: 40%;
 }
-
+#page6{
+    background: black;
+}
+.social {
+    position: relative;
+      background: black;
+    width: 100%;
+   
+    border: 1px solid black;
+    overflow-y: scroll !important;
+}

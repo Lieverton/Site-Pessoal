@@ -4,9 +4,9 @@
 @import "som.css";
 @import "page5.css";
 @import "form.css";
+@import "feed.css";
 
 @import "validationEngine.jquery.css";
 @import "onepage-scroll.css";
 @import "../fancybox/source/jquery.fancybox.css";
 @import "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
-@import "superslides.css";

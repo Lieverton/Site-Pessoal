@@ -1,0 +1,64 @@
+
+#teste {
+    position: relative;
+    top: 0;
+    margin: auto;
+    height: 100%;
+
+}
+#feed {
+    background: url(../Images/jovem.jpg) center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    float: right;
+} 
+.titulo-feed {
+    color: rgba(0,0,0,0.0);
+}
+#feed a{
+    padding-left: 60px;
+    color: rgba(0,0,0,0.0);
+}
+ 
+#feed:hover{
+    
+    background: rgba(150, 244, 10, 1.0);
+    position: relative;
+    top: 0;
+}
+#feed:hover a, h2{
+    color:black;
+}
+#feed:hover h2[class="titulo-feed"]{
+    color: black;
+}
+
+#feed2 {
+    background: url(../Images/robos.jpg) center;
+
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    float: right;
+} 
+.titulo-feed {
+    color: rgba(0,0,0,0.0);
+}
+#feed2 a{
+    padding-left: 60px;
+    color: rgba(0,0,0,0.0);
+}
+ 
+#feed2:hover{
+    
+    background: rgba(150, 244, 10, 1.0);
+    position: relative;
+    top: 0;
+}
+#feed2:hover a, h2{
+    color:black;
+}
+#feed2:hover h2[class="titulo-feed"]{
+    color: black;
+}
