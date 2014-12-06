@@ -1,0 +1,52 @@
+#content2{
+    margin: auto auto;
+    padding: 0;
+    width: 650px;
+    
+} 
+#titulo2{
+    margin: auto;
+}
+
+#page4 {
+    background: url("../Images/im3.jpg") center;
+    background-size: cover;
+}
+.int{
+    margin: 10px;
+    padding-top: 67px;
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    color: orange;
+    border: 1px solid black;
+    background: rgba(0,0,0,0.3);
+}
+
+#soft:hover{
+    background: url('../Images/virt.png') center;
+    background-size: cover;
+    color: rgba(0,0,0,0.0);  
+}
+#soft:hover{
+    background: url('../Images/soft.jpg') center;
+    background-size: cover;
+    color: rgba(0,0,0,0.0);  
+}
+#prog:hover{
+    background: url('../Images/prog.jpg') center;
+    background-size: cover;
+    color: rgba(0,0,0,0.0);  
+}
+#virt:hover{
+    background: url('../Images/virt.jpg') center;
+    background-size: cover;
+    color: rgba(0,0,0,0.0);   
+}
+#serv:hover{
+    background: url('../Images/linux.jpg') center;
+    background-size: cover;
+    color: rgba(0,0,0,0.0);  
+}

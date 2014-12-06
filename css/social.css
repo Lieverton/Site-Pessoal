@@ -10,7 +10,7 @@ and open the template in the editor.
 
 .share-buttons {
   position: fixed;
-  width: 250px;
+  width: 200px;
   height: 300px;
   padding-left: 135px;
   top: 50%;
@@ -71,6 +71,10 @@ and open the template in the editor.
   overflow: hidden;
   margin-left: 15px;
   height: 30px;
+}
+.share-button-secondary a{
+    text-decoration: none;
+    color: black;
 }
 
 .share-button-secondary-content {
